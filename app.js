@@ -5,7 +5,7 @@ const files = [
   ["04", "TikToks", "Short-form video", "https://tbzarchive1206.github.io/tiktok-youtube/"],
   ["05", "Scans", "Print and photobooks", "https://tbzarchive1206.github.io/scans/"],
   ["06", "The B Japan", "Japanese fanclub", "https://tbzarchive1206.github.io/thebjapan/"],
-  ["07", "Bubble Media", "Member updates", "https://drive.google.com/drive/folders/1pmR6jSGzWRvAwwaIn9-rBVj7BdtYeliP?usp=sharing"],
+  ["07", "Bubble Media", "Member updates", "https://tbzarchive1206.github.io/bubble-archive/"],
   ["08", "Fromm Media", "Member updates", "https://tbzarchive1206.github.io/fromm-media/"],
   ["09", "Personal Instagrams", "Individual accounts", "https://tbzarchive1206.github.io/insta-post-archive/"],
   ["10", "Instagram Stories", "Ephemeral moments", "https://tbzarchive1206.github.io/insta-stories-archive/"],
