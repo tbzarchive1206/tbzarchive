@@ -19,8 +19,7 @@ const files = [
   ["18", "Events", "Event media archive", "https://tbzarchive1206.github.io/events/"],
   ["19", "TBZ x Brands", "Brand collaborations", "https://tbzarchive1206.github.io/tbz-brands/"],
   ["20", "Solo Activities Media", "Solo activities archive", "https://tbzarchive1206.github.io/solo-activities/"],
-  ["21", "Members Youtube", "Member video channels", ""],
-  ["22", "Music", "Music archive", "https://tbzarchive1206.github.io/music-archive/"]
+  ["21", "Music", "Music archive", "https://tbzarchive1206.github.io/music-archive/"]
 ];
 
 const grid = document.querySelector("#folders");
