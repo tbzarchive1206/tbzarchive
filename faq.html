@@ -8,6 +8,25 @@
   <link rel="icon" type="image/png" href="./icon.png">
   <link rel="apple-touch-icon" href="./icon.png">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .faq-list { border-top: 1px solid currentColor; }
+    .faq-item { display: grid; grid-template-columns: minmax(230px, 38%) 1fr; border-bottom: 1px solid currentColor; }
+    .faq-question, .faq-answer { padding: 28px 30px; }
+    .faq-question { background: var(--blue, #1746d1); color: #fff; }
+    .faq-answer { border-left: 1px solid currentColor; }
+    .faq-label { display: block; margin-bottom: 18px; font: 700 10px/1 "Courier New", monospace; letter-spacing: .08em; }
+    .faq-question h2 { margin: 0; font: 800 clamp(22px, 2.5vw, 38px)/.95 "Arial Narrow", Arial, sans-serif; letter-spacing: -.035em; }
+    .faq-answer p { margin: 0 0 14px; line-height: 1.65; }
+    .faq-answer p:last-child { margin-bottom: 0; }
+    .faq-answer ul { margin: 14px 0 0; padding-left: 20px; line-height: 1.8; }
+    .faq-answer a { text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 720px) {
+      .faq-item { grid-template-columns: 1fr; }
+      .faq-question, .faq-answer { padding: 22px 15px; }
+      .faq-answer { border-left: 0; }
+      .faq-question h2 { font-size: 27px; }
+    }
+  </style>
 </head>
 <body class="subpage">
   <header class="topbar">
@@ -18,12 +37,68 @@
   <main class="subpage-main">
     <div class="subpage-header">
       <div><span class="subpage-kicker">INFORMATION / 01</span><h1>FAQ</h1></div>
-      <p class="subpage-intro">Frequently asked questions about THE BOYZ ARCHIVE will be collected here.</p>
+      <p class="subpage-intro">Answers to the most common questions about the archive, its purpose, scope, and maintenance.</p>
     </div>
-    <section class="content-card" aria-label="Frequently asked questions">
-      <article class="content-row">
-        <h2>Coming soon</h2>
-        <p>This page is ready for your questions and answers. Edit <strong>faq.html</strong> whenever you want to add new FAQ entries.</p>
+    <section class="content-card faq-list" aria-label="Frequently asked questions">
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.01</span><h2>What is tbz archive?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>tbz archive is an unofficial fan project launched in December 2024 in response to THE BOYZ frequently changing platforms following changes in their management. The project's goal is to preserve as much content as possible, organize it in one accessible place, and protect it from being permanently lost if it disappears from official sources—for example, when a company shuts down, a contract ends, or content is removed from official platforms.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.02</span><h2>Is this project affiliated with THE BOYZ or their company?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>No. This is an independent fan project and is not affiliated with THE BOYZ or any of their current or former management companies, agencies, or official representatives.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.03</span><h2>Is the archive monetized?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>No. The archive is not monetized. If advertisements appear on file-hosting platforms such as YouTube, any revenue generated goes directly to the copyright holders who have claimed the content—not to tbz archive.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.04</span><h2>Who runs tbz archive? Is it just you or a team project?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>tbz archive is run by one Deobi based in Europe. This is not a team project—everything is managed by me, from collecting and organizing content to maintaining and updating the archive. I occasionally get help from friends when there is something I am unable to archive on my own.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.05</span><h2>Do you archive Bubble / Fromm messages?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>No. I do not archive every Bubble or Fromm message. At the moment, I only archive media shared through these platforms, such as photos and voice messages sent by THE BOYZ members.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.06</span><h2>How often is the archive updated?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>Most updates are automatically synchronized with the project's Google Drive, which I try to update whenever I have some free time. Once something is added to the Drive, it will automatically appear on the website as well.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.07</span><h2>Why isn't a specific live available yet?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>I archive new content as quickly as possible, usually within a few hours to a few days after it becomes available.</p><p>Since I run the project entirely on my own while also working a full-time job, updates may occasionally take a little longer. The time difference between Europe and Korea can also contribute to delays that are beyond my control.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.08</span><h2>Why is the [content type] archive incomplete?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>tbz archive is an ongoing project that is constantly being expanded. I am not able to keep every section fully up to date while also filling in gaps from previous years at the same time. I do my best to gradually expand the archive and add both new and older content whenever I can.</p><p>The website reflects everything I have managed to collect so far, but due to the scale of the project, the archive will most likely never be 100% complete.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.09</span><h2>Why are not all THE BOYZ members, including former members, listed in every subfolder?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>If a member-specific subfolder is missing from a particular section, it simply means that I do not currently have any archived content for that member in that category. It is not intended as a statement about any member's status or history with the group.</p><p>The website reflects the material that is actually available in the archive rather than using the same set of member folders everywhere. You can also check the source Google Drive folder directly, where the archive is organized by content category and currently includes sections such as lives, concerts, Fromm media, Instagram, TikTok, photos, music, and other materials.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.10</span><h2>Why do you keep content from members who are no longer part of THE BOYZ's current activities?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>tbz archive follows official announcements regarding THE BOYZ and is not intended to reflect my personal feelings or take sides in situations involving individual members. I keep previously archived content and filters for members who are no longer participating in the group's current activities, even if those archives are incomplete. This is done for archival purposes, as they are part of the group's history.</p><p>However, once a member is no longer part of THE BOYZ's activities, tbz archive does not expand to cover their separate solo activities outside the group. I understand that this can be a sensitive subject and that fans may have different feelings about these situations, so I kindly ask for everyone's understanding.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.11</span><h2>Can I share links from the archive? Can I use your uploads?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>Yes. You are welcome to share links to the archive and use the content I upload. I only ask that you do not remove any credits, claim the archive's work as your own, or monetize any content uploaded by tbz archive.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.12</span><h2>Can I help with the project?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>At the moment, I am not looking for permanent contributors to the project.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.13</span><h2>Do you accept donations?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>Not at the moment. However, I may introduce an optional way to support the project in the future if the maintenance costs become too high. These include domain renewal, cloud storage upgrades, purchasing official content, and subscriptions required to keep the archive up to date.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.14</span><h2>What's the best way to report a broken link or issue with the website?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>You can contact me in whichever way is most convenient for you:</p><ul><li>via Twitter/X DM: <a href="https://x.com/theboyzarchive1206_" target="_blank" rel="noopener noreferrer">@theboyzarchive1206_</a></li><li>via Spin: <a href="https://spin-spin.com/tbz_archive1206" target="_blank" rel="noopener noreferrer">spin-spin.com/tbz_archive1206</a></li><li>by email: <a href="mailto:tbzarchive1206@gmail.com">tbzarchive1206@gmail.com</a></li></ul><p>In the footer, you will also find a page where you can report an issue directly.</p></div>
+      </article>
+      <article class="faq-item">
+        <div class="faq-question"><span class="faq-label">Q.15</span><h2>Why are some files unavailable?</h2></div>
+        <div class="faq-answer"><span class="faq-label">ANSWER</span><p>Some files become unavailable because copyright holders request their removal from platforms such as Twitter/X, YouTube, or Google Drive. Whenever possible, I try to provide an alternative source, but in some cases I have to respect copyright removal requests.</p></div>
       </article>
     </section>
   </main>
